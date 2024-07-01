@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Slam Dunk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Slam Dunk</a>
+            <nav>
+                <a href="#home" class="active">Home</a>
+                <a href="#intro">Intro</a>
+                <a href="#about">About</a>
+                <a href="#characters">Characters</a>
+                <a href="#legacy">Legacy</a>
+                <a href="#info">Info</a>
+            </nav>
+    </header>
+    <section id="home">
+        <video autoplay muted loop id="video">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </section>
+    <section id="intro">
+        <div class="container reveal">
+            <div class="cards">
+                <div class="text-card">
+                <p style="width: 50%;">Slam Dunk is a Japanese sports manga series written and illustrated by Takehiko Inoue. The series tells the story of Hanamichi Sakuragi, a delinquent who joins his high school basketball team in hopes of impressing a girl he likes. As he discovers his love and talent for the sport, he forms deep friendships with his teammates and learns valuable life lessons.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container reveal">
+            <h2 style="text-align: center;">About the Series</h2>
+            <div class="cards">
+                <div class="text-card">
+                    <img src="rukawa.chibi.webp" style="float: left; height: 110px; margin-right: 50px;"> <img src="sakuragi.chibi.webp" style="float: right; height: 110px; margin-left: 50px;">
+                <p style="text-align: center;">Slam Dunk was serialized in Weekly Shonen Jump from 1990 to 1996 and has since become one of the best-selling manga series of all time in Japan. It has been adapted into an anime television series, several movies, and numerous video games. The series is praised for its realistic portrayal of basketball, compelling characters, and humor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="characters">
+        <img src="https://static.wikia.nocookie.net/slamdunk/images/a/a8/Shohoku.png/revision/latest/scale-to-width-down/130?cb=20141118152046" style="width: 15%; align-items: flex-start;">
+        <div class="flex-container reveal">
+        <div class="character" onclick="showPopup('character1')"><img src="SakuragiT.webp">Hanamichi Sakuragi</div>
+        <div class="character" onclick="showPopup('character2')"><img src="AkagiT.webp">Takenori Akagi</div>
+        <div class="character" onclick="showPopup('character3')"><img src="RukawaT.webp">Kaede Rukawa</div>
+        <div class="character" onclick="showPopup('character4')"><img src="RyotaT.webp">Ryota Miyagi</div>
+        <div class="character" onclick="showPopup('character5')"><img src="MitsuiT.webp">Hisashi Mitsui</div>
+        <div class="character" onclick="showPopup('character6')"><img src="KogureT.webp">Kimonobu Kogure</div>
+        <div class="character" onclick="showPopup('character7')"><img src="YasudaT.webp">Yashuru Yasuda</div>
+        <div class="character" onclick="showPopup('character8')"><img src="TetsushiT.webp">Tetsushi Shiozaki</div>
+        <div class="character" onclick="showPopup('character9')"><img src="KakutaT.webp">Satoru Kakuta</div>
+        <div class="character" onclick="showPopup('character10')"><img src="IishiT.webp">Kentaro Iishi</div>
+        <div class="character" onclick="showPopup('character11')"><img src="SasaokaT.webp">Satoro Sasaoka</div>
+        <div class="character" onclick="showPopup('character12')"><img src="KuwataT.webp">Toki Kuwata</div>
+        <div class="character" onclick="showPopup('character13')"><img src="AnzaiT.webp">Mitsuyoshi Anzai</div>
+        <div class="character" onclick="showPopup('character14')"><img src="AyakoT.webp">Ayako</div>
+        <div class="character" onclick="showPopup('character15')"><img src="HarukoT.webp">Haruko Akagi</div>
+    </div>
+    <div id="overlay" class="overlay" onclick="hidePopup()"></div>
+
+    <div id="character1" class="popup">
+        <span class="close" onclick="hidePopup()">&times;</span>
+        <h2>Hanamichi Sakuragi</h2>
+        <p>(桜木 花道 Sakuragi Hanamichi) is the main protagonist of the Slam Dunk series. He plays as a power forward for the Shohoku High School basketball team.</p>
+        <hr>
+        <h3>Position:</h3><p>[Power Forward/Shooting Guard] Swingman/Center (Two Big Men= PF/C)</p>
+        <h3>Jersey Number:</h3><p>#10</p>
+    </div>
+    
+    <div id="character2" class="popup">
+        <span class="close" onclick="hidePopup()">&times;</span>
+        <h2>Takenori Akagi</h2>
+        <p>(赤木 剛憲 Akagi Takenori) is the team captain and Center of the Shohoku basketball team. He is also Haruko Akagi's older brother.</p>
+        <hr>
+        <h3>Position:</h3><p>Center</p>
+        <h3>Jersey Number:</h3> #10, #4, #33 (Practice)
+    </div>
+
+    <div id="character3" class="popup">
+        <span class="close" onclick="hidePopup()">&times;</span>
+        <h2>Kaede Rukawa</h2>
+        <p>(流川 楓 Rukawa Kaede) is the small forward and the ace player of the Shohoku High.</p>
+        <hr>
+        <h3>Position:</h3><p>Small Forward/Power Forward</p>
+        <h3>Jersey Number:</h3><p>#11</p>
+    </div>
+
+    <div id="character4" class="popup">
+        <span class="close" onclick="hidePopup()">&times;</span>
+        <h2>Ryota Miyagi</h2>
+        <p>(宮城 リョータ Miyagi Ryōta) is Sakuragi's closest friend on the team. After an initial misunderstanding that caused conflict between them (he was fighting Mitsui when Sakuragi and Ayako came around, and he thought she was dating him), both found comradeship in the fact that they had both been unlucky in love, although Miyagi, having only been rejected 10 times, still falls short of Sakuragi's record who was rejected 50 times.</p>
+        <hr>
+        <h3>Position:</h3><p>Point Guard, Captain</p>
+        <h3>Jersey Number:</h3><p>#7 (current), #4 (as captain), #17 (freshman)</p>
+    </div>
+
+    <div id="character5" class="popup">
+        <span class="close" onclick="hidePopup()">&times;</span>
+        <h2>Mitsui Hisashi</h2>
+        <p>(三井 寿 Mitsui Hisashi?) is the Shooting Guard of the Shohoku Basketball Team. Though he was on hiatus due to his knee injury, he still has the skills to put the team on a win. Despite having the opportunity to join more prestigious high schools like Ryonan, he choose to go to Shohoku because of Coach Mitsuyoshi Anzai. Anzai had given him the courage to win in the Junior High tournament by encouraging him during the last seconds of the match. However, an injury to his left knee in a training session in his first year at Shohoku interrupted his basketball career. An imprudent early return to the court reinjured the knee more severely, leading to a basketball hiatus of over a year.</p>
+        <hr>
+        <h3>Position:</h3><p>Shooting Guard</p>
+        <h3>Jersey Number:</h3><p>#14 (Shohoku)</p>
+    </div>
+
+    <div id="character6" class="popup">
+        <span class="close" onclick="hidePopup()">&times;</span>
+        <h2>Kimonobu Kogure</h2>
+        <p>(木暮 公延 Kogure Kiminobu) is Shohoku's vice-captain and a good friend to Akagi since Middle School. He and Akagi are the only two players who have been on the team for all three years - Mitsui left during their first year, while other players quit the team because they found Akagi's training regimen to be too strenuous.</p>
+        <hr>
+        <h3>Position:</h3><p>Vice Captain Small Forward Shooting Guard (if Mitsui is benched)</p>
+        <h3>Jersey Number:</h3><p>#5</p>
+    </div>
+
+    <div id="character7" class="popup">
+        <span class="close" onclick="hidePopup()">&times;</span>
+        <h2>Yashuru Yasuda</h2>
+        <p>(安田 靖春 Yasuda Yashuru) is one of the minor players from Shohoku. He used to be the starting Point Guard of the team until Miyagi's return to the team. Although Hanamichi picks on him, he is no pushover, as demonstrated when he stood up to Mitsui and Tetsuo when they were attempting to get the Shohoku team banned from competition for fighting. He is Ryota's close friend, and thanks to his mild and calm character he can manage to calm things down when the tension on the court starts to heat up. One example of this is when Anzai sent Yasuda into the match against Toyotama in place of Sakuragi after all five starters were infuriated by Toyotama's provocative tactics.</p>
+        <hr>
+        <h3>Position:</h3><p>Point Guard</p>
+        <h3>Jersey Number:</h3><p>#6</p>
+    </div>
+            
+    <div id="character8" class="popup">
+        <span class="close" onclick="hidePopup()">&times;</span>
+        <h2>Tetsushi Shiozaki</h2>
+        <p>(潮崎哲士) is a player of the Shohoku High School Basketball Team. He was one of the 5 lineups in the first match of the manga, the friendly match against Ryonan High School. Later in the story, he became a substitute, for Mitsui and Ryota Miyagi returned to the team.</p>
+        <hr>
+        <p>He is the starting Shooting Guard of the team before Hisashi Mitsui returned, he is 170 cm and is a 2nd Year</p>
+    </div>
+
+    <div id="character9" class="popup">
+        <span class="close" onclick="hidePopup()">&times;</span>
+        <h2>Satoru Kakuta</h2>
+        <p>Satoru Kakuta is a 2nd-year player of Shohoku. He wears the no#9 jersey and played as a power forward or center. Even though his skills are far from those of the starting 5 players of Shohoku, he is sometimes called into action when Sakuragi isn't in the field. He only appeared twice in a real game, one being in the InterHigh match against Sannoh, in which he substituted Sakuragi because of his nosebleed. However, he only did so for a few minutes. The other one was in the Kanagawa District Tournament in the match against Shoyo when Sakuragi fouled out after having his dunk called out by the referee for charging.</p>
+        <p>He is 180 cm.</p>
+        <hr>
+        <h3>Trivia:</h3>
+        <p>He is likely to be based on Kareem Abdul-Jabbar for his tendency to use the hook shot, but Kakuta's hook shot has better variations (pivot stepback sky hook, counter spin layup) and has a more polished counter moves, despite never developing his left-handed layups.</p>
+    </div>
+
+    <div id="character10" class="popup">
+        <span class="close" onclick="hidePopup()">&times;</span>
+        <h2>Kentaro Iishi</h2>
+        <p>Kentaro Iishi is a freshman in the Shohoku basketball team. He is 170 cm tall, and hasn't had the chance to play in a real game yet.</p>
+        <hr>
+        <p>His position is Point Guard/Shooting Guard.</p>
+    </div>
+
+    <div id="character11" class="popup">
+        <span class="close" onclick="hidePopup()">&times;</span>
+        <h2>Satoro Sasaoka</h2>
+        <p>Satoro Sasaoka is a freshman in the Shohoku basketball team. He is 172 cm tall, and hasn't had the chance to play in a real game yet.</p>
+        <hr>
+        <p>His position is Shooting Guard/Small Forward.</p>
+    </div>
+
+    <div id="character12" class="popup">
+        <span class="close" onclick="hidePopup()">&times;</span>
+        <h2>Toki Kuwata</h2>
+        <p>Toki Kukawata is a freshman in the Shohoku basketball team. He is 163 cm tall, and hasn't had the chance to play in a real game yet.</p>
+    </div>
+
+    <div id="character13" class="popup">
+        <span class="close" onclick="hidePopup()">&times;</span>
+        <h2>Mitsuyoshi Anzai</h2>
+        <p>(安西 光義 Anzai Mitsuyoshi) is the coach of the Shohoku High School basketball team, and one of the best coaches in Japan. Even the coaches of other teams call him "Anzai-sensei" with respect. His calm and collected attitude contrasts with the temper he had in the past as a demanding college coach, earning him the nickname, "White-Haired Devil".</p>
+        <hr>
+        <h3>Background</h3><p>During Coach Anzai's days of being a college basketball coach, a talented player named Ryuji Yazawa trained under him. Anzai held him in high regard, but Yazawa was frustrated with Anzai's tough training, and left for the United States against Anzai's wishes. His subsequent death in a car collision shook Anzai, and precipitated his transformation from the "White-Haired Devil" to the "White-Haired Buddha", as well as causing him to resign from college basketball coaching.</p>
+    </div>
+
+    <div id="character14" class="popup">
+        <span class="close" onclick="hidePopup()">&times;</span>
+        <h2>Ayako</h2>
+        <p>(彩子) is the manager of the team and object of Ryota Miyagi's affections. Strong-willed, somewhat tomboyish and good-natured, at first Ayako does not seem to reciprocate Ryota's feelings for her, which she knows of, and will not until the end of the series. She is directly responsible for sharpening Sakuragi's abilities for real matches by training him in the basics, such as ball possession and dribbling.</p>
+        <hr>
+        <p>During the Nationals Tournament, the relationship between Ayako and Ryota developed to the point where he could confide in her about his uncertainties about the upcoming Sannoh match when he was alone with her, and during the match Ayako motivated him by writing the words "Number 1 Guard" on his hand to keep him focused and determined.</p>
+        <hr>
+        <h3>Position:</h3><p>Manager</p>
+    </div>
+        
+    <div id="character15" class="popup">
+        <span class="close" onclick="hidePopup()">&times;</span>
+        <h2>Haruko Akagi</h2>
+        <p>(赤木 晴子, Akagi Haruko?) is the younger sister of Takenori Akagi and the love interest of Hanamichi Sakuragi who was responsible for uncovering his potential in basketball.</p>
+        <hr>
+        <h3>Position:</h3><p>2nd Team Manager</p>
+    </div>
+    </section>
+    <section id="legacy">
+        <div class="container reveal">
+            <h2>Legacy</h2>
+            <div class="cards">
+                <img src="sa legacy.jpg" style="float: right; width: 20%; margin-right: 10%;">
+                <div class="text-card">
+                <p style="width: 60%;"><br><br><br><br><br> Slam Dunk has had a significant impact on basketball culture in Japan and worldwide. It inspired many young readers to take up the sport and contributed to the popularity of basketball in Japan. The series continues to be beloved by fans around the world and remains a timeless classic in the world of manga and anime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="info">
+        <div class="container reveal">
+            <h2 style="text-align: left;">Additional Info</h2>
+            <div class="cards">
+                <div class="text-card">
+                <p style="width: 50%;">For more information about Slam Dunk, you can visit the official website or check out fan communities dedicated to the series.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="https://www.facebook.com/jaronwayne.sanchez.1"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/norads.xyz/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/dailyslamdunk"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://slamdunk.fandom.com/wiki/Main_Page"><i class="fa-brands fa-google-plus"></i></a>
+                <a href="https://www.youtube.com/watch?v=l4nP-Zm9YAs&pp=ygUXc2xhbSBkdW5rIG9mZmljaWFsIHBhZ2U%3D"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2024; Designed by <span class="designer">Jaron</span></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+
+            for(var i = 0; i < reveals.length; i++){
+
+                var windowheigth = window.innerHeight;
+
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if(revealtop < windowheigth - revealpoint){
+                    reveals[i].classList.add('active');
+                }
+                else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+        
+        function showPopup(characterId) {
+        document.getElementById('overlay').style.display = 'block';
+        document.getElementById(characterId).style.display = 'block';
+    }
+
+    function hidePopup() {
+        document.getElementById('overlay').style.display = 'none';
+        var popups = document.getElementsByClassName('popup');
+        for (var i = 0; i < popups.length; i++) {
+            popups[i].style.display = 'none';
+        }
+    }
+    </script>
+</body>
+</html>
